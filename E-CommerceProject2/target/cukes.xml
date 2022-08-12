@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="39.321">
+<testcase classname="Register | User could register with new account" name="guest user could register with valid data successfully" time="12.593">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "automation" and last name "tester"...............passed
+And user enter date of birth................................................passed
+And user enter email field..................................................passed
+And user fills Password fields..............................................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="11.378">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="8.848">
+<system-out><![CDATA[Given user go to login page invalid scenario................................passed
+When user login with invalid "wrong@example.com" and "P@ssw0rd".............passed
+And user press on login button invalid scenario.............................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose Euro currency from the dropdown list on the top left of home page" name="choose Euro Currency" time="6.295">
+<system-out><![CDATA[Given Select Euro currency from the dropdown list on the top left of home page.passed
+Then verify Euro Symbol is shown............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
